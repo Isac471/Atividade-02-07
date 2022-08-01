@@ -1,50 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
-body{
+
+body {
     background-color: black;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-h1{
+
+h1 {
     text-align: center;
-    font-family: 'Gentium Book Plus', serif;
     margin: auto;
     text-align: center;
-    border-radius: 5px;
     border: 5px solid white;
+    border-radius: 5px;
     margin: 25px 25px;
     height: 94vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 100px;
+    animation: effect-border 1s linear infinite;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
     text-align: center;
 }
-.conteudo-padrao{
+
+.conteudo-padrao {
     margin: auto;
     text-align: center;
     border-radius: 50px;
     border: 5px solid white;
     margin: 50px 50px;
+
 }
-h2{
+
+h1 {
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 5em;
+    font-family: serif;
+    color: transparent;
+    animation: effect 1s linear infinite;
+}
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(to right, #000FFF, #3CE7D7, red, red, #3CE7D7, #000FFF, #000FFF, #3CE7D7, red);
+        -webkit-background-clip: text;
+    }
+
+    25% {
+        background: linear-gradient(to right, #3CE7D7, red, #000FFF, #3CE7D7, #3CE7D7, red, #000FFF, #3CE7D7, #3CE7D7);
+        -webkit-background-clip: text;
+    }
+
+    50% {
+        background: linear-gradient(to right, red, #3CE7D7, #000FFF, #000FFF, #3CE7D7, red, red, #3CE7D7, #000FFF);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(to right, #3CE7D7, #000fff, red, #3CE7D7, #000FFF, red, #3CE7D7, #000FFF);
+        -webkit-background-clip: text;
+    }
+}
+
+@keyframes effect-border {
+    0% {
+        border: 1px solid linear-gradient(to right, #000FFF, #3CE7D7, red, red, #3CE7D7, #000FFF, #000FFF, #3CE7D7, red);
+        -webkit-background-clip: text;
+    }
+
+    25% {
+        border: 1px solid linear-gradient(to right, #3CE7D7, red, #000FFF, #3CE7D7, #3CE7D7, red, #000FFF, #3CE7D7, #3CE7D7);
+        -webkit-background-clip: text;
+    }
+
+    50% {
+        border: 1px solid linear-gradient(to right, red, #3CE7D7, #000FFF, #000FFF, #3CE7D7, red, red, #3CE7D7, #000FFF);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        border: 1px solid linear-gradient(to right, #3CE7D7, #000fff, red, #3CE7D7, #000FFF, red, #3CE7D7, #000FFF);
+        -webkit-background-clip: text;
+    }
+}
+
+h2 {
     text-align: center;
 }
-img{
+
+#intro-pag {
+    text-align: center;
+}
+
+img {
     border-radius: 50px;
     border: 2px solid white;
     margin: 20px 20px;
     max-width: 80%;
     height: auto;
-    
+
 }
-nav{
+
+nav {
     margin: auto;
     text-align: center;
     border-radius: 50px;
