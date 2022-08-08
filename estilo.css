@@ -70,28 +70,6 @@ h1 {
     }
 }
 
-@keyframes effect-border {
-    0% {
-        border: 1px solid linear-gradient(to right, #000FFF, #3CE7D7, red, red, #3CE7D7, #000FFF, #000FFF, #3CE7D7, red);
-        -webkit-background-clip: text;
-    }
-
-    25% {
-        border: 1px solid linear-gradient(to right, #3CE7D7, red, #000FFF, #3CE7D7, #3CE7D7, red, #000FFF, #3CE7D7, #3CE7D7);
-        -webkit-background-clip: text;
-    }
-
-    50% {
-        border: 1px solid linear-gradient(to right, red, #3CE7D7, #000FFF, #000FFF, #3CE7D7, red, red, #3CE7D7, #000FFF);
-        -webkit-background-clip: text;
-    }
-
-    100% {
-        border: 1px solid linear-gradient(to right, #3CE7D7, #000fff, red, #3CE7D7, #000FFF, red, #3CE7D7, #000FFF);
-        -webkit-background-clip: text;
-    }
-}
-
 h2 {
     text-align: center;
 }
